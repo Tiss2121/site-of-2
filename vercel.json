@@ -3,5 +3,18 @@
   "outputDirectory": ".",
   "framework": null,
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.phoenixrising13135.com" }],
+      "destination": "https://phoenixrising13135.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/events-and-news.html",
+      "destination": "https://phoenixrising13135.com/",
+      "permanent": true
+    }
+  ]
 }
